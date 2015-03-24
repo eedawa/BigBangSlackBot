@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', function (req, res) { res.status(200).send('Hello world!') });
 
 // hello world route
-app.post('/hello', bigbang);
+app.post('/hello', hellobot);
 
 // error handler
 app.use(function (err, req, res, next) {
