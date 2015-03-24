@@ -3,7 +3,7 @@ module.exports = function (req, res, next) {
   var botPayload = {
     text : 'Wow, fantastic baby!'
   };
-  if (userName !== "Big Bang Bot"){
+  if (userName !== "BigBangBot"){
     return res.status(200).json(botPayload);
   };
 }
