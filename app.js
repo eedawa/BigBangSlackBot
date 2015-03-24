@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var bigbangslackbot = require('./hello');
+var hellobot = require('./hello');
 
 // init node
 var app = express();
@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', function (req, res) { res.status(200).send('Hello world!') });
 
 // hello world route
-app.post('/hello', bigbangslackbot);
+app.post('/hello', bigbang);
 
 // error handler
 app.use(function (err, req, res, next) {
