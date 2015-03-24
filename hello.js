@@ -1,9 +1,9 @@
 module.exports = function (req, res, next) {
   var userName = req.body.user_name;
   var botPayload = {
-    text : 'Wow, fantastic baby!'
+    text : 'Fantastic, baby! BOOMSHAKALAKA BOOMSHAKALAKA'
   };
-  if (userName !== "BigBangBot"){
+  if (userName !== "Big Bang Bot"){
     return res.status(200).json(botPayload);
   };
 }
