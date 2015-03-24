@@ -1,6 +1,6 @@
 module.exports = function (req, res, next) {
+  var userName = req.body.user_name;
   var botPayload = {
-    var userName = req.body.user_name;
     text : 'Wow, fantastic baby!'
   };
   if (userName != "bigbangslackbot"){
