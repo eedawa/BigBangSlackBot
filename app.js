@@ -1,6 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var hellobot = require('./hello');
+var bigbangslackbot = require('./hello');
 
 // init node
 var app = express();
